@@ -5,59 +5,80 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Somewhere vs Sagan — Global Talent Hiring Comparison</title>
   <meta name="description" content="Compare Somewhere and Sagan for hiring global talent. See how Sagan's membership model saves you more on every hire — plus ongoing post-hire support Somewhere doesn't offer.">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --navy: #1a2332;
-      --navy-deep: #0f1720;
-      --slate: #334155;
-      --slate-light: #64748b;
-      --green: #1e3a5f;
-      --green-light: #dbeafe;
-      --green-bg: #eff6ff;
-      --green-accent: #152d4a;
-      --red: #dc2626;
-      --red-light: #fef2f2;
-      --gold: #d97706;
-      --white: #ffffff;
-      --off-white: #fafbfc;
-      --gray-50: #f8fafc;
-      --gray-100: #f1f5f9;
-      --gray-200: #e2e8f0;
-      --gray-300: #cbd5e1;
-      --gray-400: #94a3b8;
-      --gray-500: #64748b;
-      --gray-600: #475569;
-      --gray-700: #334155;
-      --gray-800: #1e293b;
-      --gray-900: #0f172a;
-      --text: #1e293b;
-      --text-secondary: #475569;
-      --border: #e2e8f0;
-      --radius: 12px;
-      --radius-lg: 16px;
-      --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
-      --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
-      --shadow-md: 0 4px 12px rgba(0,0,0,0.06), 0 2px 4px rgba(0,0,0,0.04);
-      --shadow-lg: 0 10px 30px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.04);
+      /* Sagan palette mapped into existing names */
+      --navy:          #093A3E;
+      --navy-deep:     #06282B;
+      --slate:         #4A6B6B;
+      --slate-light:   #4A6B6B;
+      --green:         #093A3E;
+      --green-light:   rgba(33, 151, 255, 0.08);
+      --green-bg:      #EDE9E5;
+      --green-accent:  #2197FF;
+      --red:           #611F2C;
+      --red-light:     rgba(255, 116, 85, 0.10);
+      --gold:          #F5B800;
+      --white:         #FFFFFF;
+      --off-white:     #F5F2ED;   /* cream page bg */
+      --gray-50:       #F5F2ED;
+      --gray-100:      #EDE9E5;
+      --gray-200:      #E3DED7;
+      --gray-300:      #DBD7D1;
+      --gray-400:      #B7B1A8;
+      --gray-500:      #9E978E;
+      --gray-600:      #4A6B6B;
+      --gray-700:      #06282B;
+      --gray-800:      #093A3E;
+      --gray-900:      #06282B;
+      --text:          #093A3E;
+      --text-secondary:#4A6B6B;
+      --border:        rgba(9, 58, 62, 0.10);
+      --radius:        10px;
+      --radius-lg:     24px;
+      --shadow-sm:     0 1px 2px rgba(9, 58, 62, 0.04);
+      --shadow:        0 1px 2px rgba(9, 58, 62, 0.04);
+      --shadow-md:     0 4px 12px rgba(9, 58, 62, 0.06);
+      --shadow-lg:     0 20px 44px -28px rgba(9, 58, 62, 0.22);
+
+      /* Brand extras */
+      --glacier:       #093A3E;
+      --dark-glacier:  #06282B;
+      --glacier-muted: #4A6B6B;
+      --cream:         #F5F2ED;
+      --cream-deep:    #EDE9E5;
+      --dandelion:     #F5B800;
+      --hairline:      rgba(9, 58, 62, 0.10);
+      --hairline-soft: rgba(9, 58, 62, 0.06);
     }
 
     html { scroll-behavior: smooth; }
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      color: var(--text);
-      background: var(--white);
-      line-height: 1.6;
+      font-family: 'Space Grotesk', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+      color: var(--glacier);
+      background: var(--cream);
+      line-height: 1.55;
       -webkit-font-smoothing: antialiased;
     }
 
-    .serif { font-family: 'Newsreader', Georgia, 'Times New Roman', serif; }
+    h1, h2, h3, h4 {
+      font-family: 'Plus Jakarta Sans', 'PP Mori', 'Space Grotesk', system-ui, sans-serif;
+      font-weight: 600;
+      letter-spacing: -0.025em;
+      line-height: 1.1;
+      color: var(--glacier);
+    }
+    h1 { letter-spacing: -0.035em; line-height: 1.02; }
+
+    .serif { font-family: 'Plus Jakarta Sans', 'PP Mori', system-ui, sans-serif; font-style: italic; }
+    .mono  { font-family: 'Fragment Mono', ui-monospace, 'SF Mono', Menlo, monospace; font-feature-settings: "tnum"; }
 
     .container {
       max-width: 1080px;
@@ -83,7 +104,7 @@
       position: sticky;
       top: 0;
       z-index: 100;
-      background: rgba(255,255,255,0.92);
+      background: rgba(245, 242, 237, 0.85);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
       border-bottom: 1px solid var(--border);
@@ -113,7 +134,7 @@
       text-decoration: none;
       font-weight: 600;
       font-size: 0.875rem;
-      transition: all 0.2s;
+      transition: all 0.3s cubic-bezier(0.5, 0, 0, 1);
     }
     .nav-cta:hover {
       background: var(--green-accent);
@@ -124,7 +145,7 @@
     .hero {
       padding: 80px 24px 88px;
       text-align: center;
-      background: linear-gradient(180deg, var(--gray-50) 0%, var(--white) 100%);
+      background: var(--cream);
       border-bottom: 1px solid var(--border);
     }
     .hero-inner {
@@ -144,14 +165,14 @@
     }
     .hero h1 {
       font-size: clamp(2.2rem, 5vw, 3.2rem);
-      font-weight: 900;
+      font-weight: 700;
       line-height: 1.12;
       letter-spacing: -0.035em;
       color: var(--gray-900);
       margin-bottom: 20px;
     }
     .hero h1 em {
-      font-family: 'Newsreader', Georgia, serif;
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
       font-style: italic;
       font-weight: 500;
       color: var(--green);
@@ -167,17 +188,18 @@
       display: inline-block;
       background: var(--green);
       color: var(--white);
-      padding: 16px 40px;
-      border-radius: 8px;
+      padding: 16px 34px;
+      border-radius: 100px;
       text-decoration: none;
-      font-weight: 700;
+      font-weight: 600;
       font-size: 1rem;
-      transition: all 0.2s;
-      box-shadow: 0 2px 8px rgba(5, 150, 105, 0.2);
+      letter-spacing: -0.01em;
+      transition: all 0.6s cubic-bezier(0.5, 0, 0, 1);
+      box-shadow: 0 1px 2px rgba(9, 58, 62, 0.06);
     }
     .hero-cta:hover {
       background: var(--green-accent);
-      box-shadow: 0 4px 16px rgba(5, 150, 105, 0.3);
+      box-shadow: 0 3px 10px rgba(9, 58, 62, 0.10);
       transform: translateY(-1px);
     }
     .hero-sub {
@@ -202,15 +224,19 @@
     }
     .stat-item {}
     .stat-number {
-      font-size: 2.4rem;
-      font-weight: 900;
-      letter-spacing: -0.03em;
+      font-family: 'Fragment Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+      font-size: 2.2rem;
+      font-weight: 400;
+      letter-spacing: -0.02em;
       color: var(--gray-900);
-      margin-bottom: 4px;
+      margin-bottom: 8px;
+      font-feature-settings: "tnum";
     }
-    .stat-number.green { color: var(--green); }
+    .stat-number.green { color: var(--green-accent); }
     .stat-label {
-      font-size: 0.82rem;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
       color: var(--gray-500);
       font-weight: 500;
     }
@@ -227,14 +253,14 @@
     }
     .section-title {
       font-size: clamp(1.75rem, 3.5vw, 2.4rem);
-      font-weight: 800;
+      font-weight: 600;
       letter-spacing: -0.03em;
       margin-bottom: 12px;
       line-height: 1.2;
       color: var(--gray-900);
     }
     .section-title em {
-      font-family: 'Newsreader', Georgia, serif;
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
       font-style: italic;
       font-weight: 500;
     }
@@ -324,7 +350,7 @@
       background: var(--gray-50);
     }
     .comparison-table td:nth-child(3) {
-      background: rgba(240, 253, 249, 0.5);
+      background: rgba(231, 250, 241, 0.5);
     }
     .comparison-table td small {
       display: block;
@@ -407,7 +433,7 @@
       border: 1px solid rgba(255,255,255,0.08);
     }
     .calc-result-card.sagan {
-      background: rgba(5, 150, 105, 0.1);
+      background: rgba(33, 151, 255, 0.1);
       border: 1px solid rgba(30, 58, 95, 0.4);
     }
     .calc-result-label {
@@ -418,10 +444,10 @@
       margin-bottom: 8px;
     }
     .calc-result-card.somewhere .calc-result-label { color: rgba(255,255,255,0.35); }
-    .calc-result-card.sagan .calc-result-label { color: #93c5fd; }
+    .calc-result-card.sagan .calc-result-label { color: #2197FF; }
     .calc-result-amount {
       font-size: 2rem;
-      font-weight: 900;
+      font-weight: 700;
       letter-spacing: -0.03em;
     }
     .calc-result-card.somewhere .calc-result-amount { color: rgba(255,255,255,0.5); }
@@ -435,8 +461,8 @@
     .calc-savings {
       text-align: center;
       padding: 24px;
-      background: rgba(5, 150, 105, 0.08);
-      border: 1px solid rgba(5, 150, 105, 0.2);
+      background: rgba(33, 151, 255, 0.08);
+      border: 1px solid rgba(33, 151, 255, 0.2);
       border-radius: var(--radius);
     }
     .calc-savings-label {
@@ -444,14 +470,14 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-      color: #93c5fd;
+      color: #2197FF;
       margin-bottom: 4px;
     }
     .calc-savings-amount {
       font-size: 1.8rem;
-      font-weight: 900;
+      font-weight: 700;
       letter-spacing: -0.02em;
-      color: #93c5fd;
+      color: #2197FF;
     }
     .calc-savings-note {
       font-size: 0.8rem;
@@ -480,7 +506,7 @@
     }
     .posthire-card.sagan-card {
       background: var(--green-bg);
-      border-color: #93c5fd;
+      border-color: #2197FF;
     }
     .posthire-card h3 {
       font-size: 1.05rem;
@@ -493,7 +519,7 @@
     .posthire-card.somewhere-card h3 { color: var(--gray-400); }
     .posthire-card.sagan-card h3 {
       color: var(--green-accent);
-      border-bottom-color: #93c5fd;
+      border-bottom-color: #2197FF;
     }
     .posthire-item {
       display: flex;
@@ -542,7 +568,7 @@
     }
     .testimonial-card:hover {
       box-shadow: var(--shadow-lg);
-      transform: translateY(-3px);
+      transform: translateY(-2px);
     }
     .testimonial-stars {
       color: var(--gold);
@@ -551,7 +577,7 @@
       letter-spacing: 2px;
     }
     .testimonial-text {
-      font-family: 'Newsreader', Georgia, serif;
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
       font-size: 1rem;
       color: var(--text);
       line-height: 1.7;
@@ -636,7 +662,7 @@
       font-weight: 800;
     }
     .quote-text {
-      font-family: 'Newsreader', Georgia, serif;
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
       font-size: 1.02rem;
       color: var(--text);
       line-height: 1.65;
@@ -694,13 +720,13 @@
     }
     .final-cta h2 {
       font-size: clamp(2rem, 4vw, 2.8rem);
-      font-weight: 900;
+      font-weight: 700;
       letter-spacing: -0.03em;
       margin-bottom: 14px;
       color: var(--gray-900);
     }
     .final-cta h2 em {
-      font-family: 'Newsreader', Georgia, serif;
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
       font-style: italic;
       font-weight: 500;
       color: var(--green);
@@ -753,6 +779,139 @@
       .comparison-table { min-width: 620px; }
       .comparison-table td, .comparison-table thead th { padding: 12px 16px; font-size: 0.85rem; }
     }
+
+    /* ── RATINGS BAR ── */
+    .ratings-bar {
+      padding: 44px 24px;
+      background: linear-gradient(180deg, #F5F3F0 0%, #FFFFFF 100%);
+      border-top: 1px solid rgba(9, 58, 62, 0.08);
+      border-bottom: 1px solid rgba(9, 58, 62, 0.08);
+    }
+    .ratings-inner {
+      max-width: 1040px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .rating-card {
+      background: #FFFFFF;
+      border: 1px solid rgba(9, 58, 62, 0.10);
+      border-radius: 16px;
+      padding: 22px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 12px;
+      text-decoration: none;
+      color: #093A3E;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+      min-height: 140px;
+    }
+    a.rating-card { cursor: pointer; }
+    a.rating-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(9, 58, 62, 0.08);
+      border-color: rgba(9, 58, 62, 0.20);
+    }
+    .rating-mark {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 800;
+      letter-spacing: -0.01em;
+      line-height: 1;
+    }
+    .rating-mark svg { display: block; }
+    .rating-mark--g2 {
+      color: #FF492C;
+      font-size: 1.15rem;
+    }
+    .rating-mark--g2 svg { width: 26px; height: 26px; flex-shrink: 0; }
+    .rating-mark--clutch {
+      color: #17313B;
+      font-size: 1.3rem;
+      letter-spacing: -0.02em;
+    }
+    .rating-mark--clutch .clutch-dot {
+      width: 9px; height: 9px;
+      border-radius: 50%;
+      background: #E62415;
+      display: inline-block;
+      margin-left: 1px;
+      align-self: flex-end;
+      margin-bottom: 4px;
+    }
+    .rating-mark--award {
+      color: #093A3E;
+      font-size: 0.78rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .rating-body {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+    }
+    .rating-score {
+      font-family: 'Fragment Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+      font-size: 2rem;
+      font-weight: 400;
+      letter-spacing: -0.03em;
+      color: #093A3E;
+      line-height: 1;
+    }
+    .rating-score small {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: rgba(9, 58, 62, 0.55);
+      letter-spacing: 0;
+    }
+    .rating-meta {
+      font-size: 0.78rem;
+      color: rgba(9, 58, 62, 0.62);
+      letter-spacing: 0.01em;
+      line-height: 1.4;
+    }
+    .rating-stars {
+      color: #F5B800;
+      font-size: 0.86rem;
+      letter-spacing: 2px;
+    }
+    .rating-card--featured {
+      background: #F5B800;
+      border-color: rgba(9, 58, 62, 0.15);
+      color: #093A3E;
+      position: relative;
+      overflow: hidden;
+    }
+    .rating-card--featured::after {
+      content: '';
+      position: absolute;
+      top: -44px; right: -44px;
+      width: 128px; height: 128px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.22);
+      pointer-events: none;
+    }
+    .rating-card--featured > * { position: relative; z-index: 1; }
+    .rating-card--featured .rating-mark--award { color: #093A3E; }
+    .rating-card--featured .rating-score {
+      color: #093A3E;
+      font-size: 2.9rem;
+    }
+    .rating-card--featured .rating-meta {
+      color: rgba(9, 58, 62, 0.78);
+      font-weight: 600;
+    }
+    @media (max-width: 760px) {
+      .ratings-inner { grid-template-columns: 1fr; gap: 12px; }
+      .rating-card { padding: 18px 20px; min-height: auto; }
+      .rating-score { font-size: 1.75rem; }
+      .rating-card--featured .rating-score { font-size: 2.25rem; }
+    }
   </style>
 </head>
 <body>
@@ -773,6 +932,40 @@
       <p>Both companies recruit global talent directly for your team. The difference? Sagan costs less per hire, saves you more as you scale, and supports you long after the hire.</p>
       <a href="https://calendly.com/d/5j7-3xv-p5k/global-talent-hiring-consultation?utm_source=somewhere-vs-sagan&utm_term=hero" class="hero-cta" target="_blank" rel="noopener">Book a Free Consultation</a>
       <div class="hero-sub">No commitment. No pressure. See if Sagan is the right fit.</div>
+    </div>
+  </section>
+
+  <!-- RATINGS BAR -->
+  <section class="ratings-bar" aria-label="Customer ratings and awards">
+    <div class="ratings-inner">
+      <div class="rating-card">
+        <div class="rating-mark rating-mark--g2" aria-hidden="true">
+          <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#FF492C" d="M12 0a12 12 0 1 0 0 24 12 12 0 0 0 0-24Zm.122 5.143c.45 0 .9.044 1.342.132l-1.342 2.806C9.962 8.08 8.203 9.84 8.203 12s1.76 3.92 3.92 3.92c.937 0 1.844-.338 2.553-.951l1.483 2.572A6.856 6.856 0 0 1 5.266 12a6.856 6.856 0 0 1 6.856-6.856Zm3.498.49a1.262 1.262 0 0 1 .026 0c.427 0 .792.113 1.101.34.31.229.466.546.466.946 0 .639-.36 1.03-1.035 1.376l-.377.191c-.403.204-.602.385-.657.706h2.05v.85h-3.101v-.144c0-.526.103-.96.314-1.306.211-.345.576-.65 1.102-.917l.242-.117c.427-.216.538-.401.538-.625 0-.266-.228-.458-.6-.458-.44 0-.773.228-1.004.694l-.592-.595c.13-.279.338-.502.619-.675a1.7 1.7 0 0 1 .908-.266Zm-2.094 5.388h3.394l1.697 2.937-1.697 2.94-1.697-2.94H11.83l1.696-2.937Z"/></svg>
+          <span>G2</span>
+        </div>
+        <div class="rating-body">
+          <span class="rating-score">4.9<small>/5</small></span>
+          <span class="rating-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        </div>
+        <div class="rating-meta">Category leader &middot; Verified reviews</div>
+      </div>
+      <a href="https://clutch.co/profile/sagan-passport" target="_blank" rel="noopener" class="rating-card">
+        <div class="rating-mark rating-mark--clutch" aria-hidden="true">
+          <span>Clutch</span><span class="clutch-dot"></span>
+        </div>
+        <div class="rating-body">
+          <span class="rating-score">4.8<small>/5</small></span>
+          <span class="rating-stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+        </div>
+        <div class="rating-meta">45 verified client reviews</div>
+      </a>
+      <a href="https://clutch.co/profile/sagan-passport" target="_blank" rel="noopener" class="rating-card rating-card--featured">
+        <div class="rating-mark rating-mark--award" aria-hidden="true">Clutch 100 &middot; 2025</div>
+        <div class="rating-body">
+          <span class="rating-score">#20</span>
+        </div>
+        <div class="rating-meta">Fastest-growing companies, globally</div>
+      </a>
     </div>
   </section>
 
@@ -1176,15 +1369,15 @@
 
       if (savings > 0) {
         el.textContent = 'Save ' + fmt(savings);
-        el.style.color = '#93c5fd';
+        el.style.color = '#2197FF';
         note.textContent = 'Plus post-hire support, playbooks & community \u2014 included free';
       } else if (savings >= -1000) {
         el.textContent = 'Comparable cost';
-        el.style.color = '#fbbf24';
+        el.style.color = '#F5B800';
         note.textContent = 'But Sagan includes post-hire support, playbooks & community that Somewhere doesn\u2019t offer';
       } else {
         el.textContent = fmt(saganTotal - swCost) + ' more upfront';
-        el.style.color = '#fbbf24';
+        el.style.color = '#F5B800';
         note.textContent = 'But includes $' + saganMembership.toLocaleString() + '/yr of post-hire support, community & playbooks that Somewhere doesn\u2019t offer at any price';
       }
     }
