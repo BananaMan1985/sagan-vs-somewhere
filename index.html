@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Somewhere vs Sagan — Global Talent Hiring Comparison</title>
+  <meta name="description" content="Compare Somewhere and Sagan for hiring global talent. See how Sagan's membership model saves you more on every hire — plus ongoing post-hire support Somewhere doesn't offer.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy: #1a2332;
+      --navy-deep: #0f1720;
+      --slate: #334155;
+      --slate-light: #64748b;
+      --green: #1e3a5f;
+      --green-light: #dbeafe;
+      --green-bg: #eff6ff;
+      --green-accent: #152d4a;
+      --red: #dc2626;
+      --red-light: #fef2f2;
+      --gold: #d97706;
+      --white: #ffffff;
+      --off-white: #fafbfc;
+      --gray-50: #f8fafc;
+      --gray-100: #f1f5f9;
+      --gray-200: #e2e8f0;
+      --gray-300: #cbd5e1;
+      --gray-400: #94a3b8;
+      --gray-500: #64748b;
+      --gray-600: #475569;
+      --gray-700: #334155;
+      --gray-800: #1e293b;
+      --gray-900: #0f172a;
+      --text: #1e293b;
+      --text-secondary: #475569;
+      --border: #e2e8f0;
+      --radius: 12px;
+      --radius-lg: 16px;
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+      --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 12px rgba(0,0,0,0.06), 0 2px 4px rgba(0,0,0,0.04);
+      --shadow-lg: 0 10px 30px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.04);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .serif { font-family: 'Newsreader', Georgia, 'Times New Roman', serif; }
+
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ── ANIMATIONS ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+    }
+    .nav-logo {
+      color: var(--gray-900);
+      font-weight: 800;
+      font-size: 1rem;
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+    .nav-logo span { color: var(--green); }
+    .nav-cta {
+      background: var(--green);
+      color: var(--white);
+      padding: 10px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.875rem;
+      transition: all 0.2s;
+    }
+    .nav-cta:hover {
+      background: var(--green-accent);
+      box-shadow: var(--shadow-md);
+    }
+
+    /* ── HERO ── */
+    .hero {
+      padding: 80px 24px 88px;
+      text-align: center;
+      background: linear-gradient(180deg, var(--gray-50) 0%, var(--white) 100%);
+      border-bottom: 1px solid var(--border);
+    }
+    .hero-inner {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: var(--green-light);
+      color: var(--green-accent);
+      padding: 6px 16px;
+      border-radius: 100px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 28px;
+      letter-spacing: 0.01em;
+    }
+    .hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      font-weight: 900;
+      line-height: 1.12;
+      letter-spacing: -0.035em;
+      color: var(--gray-900);
+      margin-bottom: 20px;
+    }
+    .hero h1 em {
+      font-family: 'Newsreader', Georgia, serif;
+      font-style: italic;
+      font-weight: 500;
+      color: var(--green);
+    }
+    .hero p {
+      color: var(--text-secondary);
+      font-size: 1.15rem;
+      max-width: 540px;
+      margin: 0 auto 36px;
+      line-height: 1.7;
+    }
+    .hero-cta {
+      display: inline-block;
+      background: var(--green);
+      color: var(--white);
+      padding: 16px 40px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1rem;
+      transition: all 0.2s;
+      box-shadow: 0 2px 8px rgba(5, 150, 105, 0.2);
+    }
+    .hero-cta:hover {
+      background: var(--green-accent);
+      box-shadow: 0 4px 16px rgba(5, 150, 105, 0.3);
+      transform: translateY(-1px);
+    }
+    .hero-sub {
+      color: var(--gray-400);
+      font-size: 0.85rem;
+      margin-top: 16px;
+    }
+
+    /* ── STATS ROW ── */
+    .stats-row {
+      padding: 56px 24px;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+    }
+    .stats-inner {
+      max-width: 800px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      text-align: center;
+    }
+    .stat-item {}
+    .stat-number {
+      font-size: 2.4rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      color: var(--gray-900);
+      margin-bottom: 4px;
+    }
+    .stat-number.green { color: var(--green); }
+    .stat-label {
+      font-size: 0.82rem;
+      color: var(--gray-500);
+      font-weight: 500;
+    }
+
+    /* ── SECTION ── */
+    section { padding: 80px 0; }
+    .section-label {
+      text-transform: uppercase;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: var(--green);
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-size: clamp(1.75rem, 3.5vw, 2.4rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      margin-bottom: 12px;
+      line-height: 1.2;
+      color: var(--gray-900);
+    }
+    .section-title em {
+      font-family: 'Newsreader', Georgia, serif;
+      font-style: italic;
+      font-weight: 500;
+    }
+    .section-subtitle {
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+      max-width: 520px;
+      line-height: 1.65;
+    }
+    .section-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+    .section-header .section-subtitle {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* ── COMPARISON TABLE ── */
+    .comparison-section {
+      background: var(--gray-50);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .comparison-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--border);
+    }
+    .comparison-table thead th {
+      padding: 20px 24px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-align: left;
+      border-bottom: 2px solid var(--gray-200);
+    }
+    .comparison-table thead th:first-child {
+      background: var(--gray-50);
+      color: var(--gray-500);
+      width: 34%;
+    }
+    .comparison-table thead th:nth-child(2) {
+      background: var(--red-light);
+      color: var(--gray-700);
+      width: 33%;
+    }
+    .comparison-table thead th:nth-child(3) {
+      background: var(--green-bg);
+      color: var(--gray-900);
+      width: 33%;
+    }
+    .winner-badge {
+      display: inline-block;
+      background: var(--green);
+      color: var(--white);
+      font-size: 0.6rem;
+      padding: 3px 8px;
+      border-radius: 4px;
+      margin-left: 8px;
+      vertical-align: middle;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-weight: 700;
+    }
+    .comparison-table td {
+      padding: 15px 24px;
+      border-bottom: 1px solid var(--gray-100);
+      font-size: 0.9rem;
+      vertical-align: middle;
+      color: var(--text);
+    }
+    .comparison-table tbody tr:hover td {
+      background: var(--gray-50);
+    }
+    .comparison-table tbody tr:hover td:nth-child(3) {
+      background: var(--green-bg);
+    }
+    .comparison-table tr:last-child td { border-bottom: none; }
+    .comparison-table td:first-child {
+      font-weight: 600;
+      color: var(--gray-600);
+      background: var(--gray-50);
+    }
+    .comparison-table td:nth-child(3) {
+      background: rgba(240, 253, 249, 0.5);
+    }
+    .comparison-table td small {
+      display: block;
+      color: var(--gray-400);
+      font-weight: 400;
+      margin-top: 2px;
+      font-size: 0.8rem;
+    }
+    .check { color: var(--green); font-weight: 600; }
+    .cross { color: var(--red); }
+    .neutral { color: var(--gray-400); }
+
+    /* ── CALCULATOR ── */
+    .calculator-section {
+      background: var(--navy);
+      color: var(--white);
+    }
+    .calculator-section .section-label { color: var(--green-light); }
+    .calculator-section .section-title { color: var(--white); }
+    .calculator-section .section-title em { color: rgba(255,255,255,0.7); }
+    .calculator-section .section-subtitle { color: rgba(255,255,255,0.5); }
+
+    .calc-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius-lg);
+      padding: 44px;
+      max-width: 840px;
+      margin: 0 auto;
+    }
+    .calc-inputs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 36px;
+    }
+    .calc-field label {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .calc-field input, .calc-field select {
+      width: 100%;
+      padding: 14px 16px;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 8px;
+      color: var(--white);
+      font-size: 1.1rem;
+      font-family: inherit;
+      font-weight: 700;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+    .calc-field input:focus, .calc-field select:focus {
+      border-color: rgba(255,255,255,0.3);
+    }
+    .calc-field select option { background: var(--navy); color: var(--white); }
+    .calc-divider {
+      height: 1px;
+      background: rgba(255,255,255,0.08);
+      margin-bottom: 32px;
+    }
+    .calc-results {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+    .calc-result-card {
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+    .calc-result-card.somewhere {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+    .calc-result-card.sagan {
+      background: rgba(5, 150, 105, 0.1);
+      border: 1px solid rgba(30, 58, 95, 0.4);
+    }
+    .calc-result-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 8px;
+    }
+    .calc-result-card.somewhere .calc-result-label { color: rgba(255,255,255,0.35); }
+    .calc-result-card.sagan .calc-result-label { color: #93c5fd; }
+    .calc-result-amount {
+      font-size: 2rem;
+      font-weight: 900;
+      letter-spacing: -0.03em;
+    }
+    .calc-result-card.somewhere .calc-result-amount { color: rgba(255,255,255,0.5); }
+    .calc-result-card.sagan .calc-result-amount { color: var(--white); }
+    .calc-result-detail {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.3);
+      margin-top: 6px;
+      line-height: 1.5;
+    }
+    .calc-savings {
+      text-align: center;
+      padding: 24px;
+      background: rgba(5, 150, 105, 0.08);
+      border: 1px solid rgba(5, 150, 105, 0.2);
+      border-radius: var(--radius);
+    }
+    .calc-savings-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #93c5fd;
+      margin-bottom: 4px;
+    }
+    .calc-savings-amount {
+      font-size: 1.8rem;
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      color: #93c5fd;
+    }
+    .calc-savings-note {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.35);
+      margin-top: 6px;
+    }
+
+    /* ── POST-HIRE ── */
+    .posthire-section {
+      background: var(--gray-50);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .posthire-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    .posthire-card {
+      padding: 36px;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border);
+    }
+    .posthire-card.somewhere-card {
+      background: var(--white);
+    }
+    .posthire-card.sagan-card {
+      background: var(--green-bg);
+      border-color: #93c5fd;
+    }
+    .posthire-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 24px;
+      letter-spacing: -0.01em;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--border);
+    }
+    .posthire-card.somewhere-card h3 { color: var(--gray-400); }
+    .posthire-card.sagan-card h3 {
+      color: var(--green-accent);
+      border-bottom-color: #93c5fd;
+    }
+    .posthire-item {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 16px;
+      font-size: 0.92rem;
+      line-height: 1.55;
+      color: var(--text-secondary);
+    }
+    .posthire-item:last-child { margin-bottom: 0; }
+    .posthire-item .icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      font-size: 0.65rem;
+      margin-top: 2px;
+      font-weight: 700;
+    }
+    .somewhere-card .posthire-item .icon {
+      background: var(--red-light);
+      color: var(--red);
+    }
+    .sagan-card .posthire-item .icon {
+      background: var(--green-light);
+      color: var(--green);
+    }
+    .sagan-card .posthire-item { color: var(--text); }
+
+    /* ── TESTIMONIALS ── */
+    .testimonials-section { }
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+    .testimonial-card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 32px;
+      border: 1px solid var(--border);
+      transition: box-shadow 0.25s, transform 0.25s;
+    }
+    .testimonial-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-3px);
+    }
+    .testimonial-stars {
+      color: var(--gold);
+      font-size: 0.9rem;
+      margin-bottom: 16px;
+      letter-spacing: 2px;
+    }
+    .testimonial-text {
+      font-family: 'Newsreader', Georgia, serif;
+      font-size: 1rem;
+      color: var(--text);
+      line-height: 1.7;
+      margin-bottom: 24px;
+      font-style: italic;
+    }
+    .testimonial-divider {
+      height: 1px;
+      background: var(--gray-200);
+      margin-bottom: 16px;
+    }
+    .testimonial-author {
+      font-weight: 700;
+      font-size: 0.88rem;
+      color: var(--gray-900);
+    }
+    .testimonial-role {
+      font-size: 0.78rem;
+      color: var(--gray-400);
+      margin-top: 2px;
+    }
+
+    /* ── WALL OF LOVE ── */
+    .wall-section {
+      background: var(--gray-50);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+    }
+    .wall-grid {
+      columns: 3;
+      column-gap: 16px;
+    }
+    .wall-card {
+      break-inside: avoid;
+      margin-bottom: 16px;
+      background: var(--white);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      transition: box-shadow 0.25s, transform 0.25s;
+    }
+    .wall-card:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-2px);
+    }
+    /* Tweet embed cards */
+    .wall-card.tweet-card {
+      padding: 0;
+    }
+    .wall-card.tweet-card .twitter-tweet {
+      margin: 0 !important;
+    }
+    .wall-card.tweet-card blockquote {
+      margin: 0 !important;
+      border: none !important;
+    }
+    /* Pull quote cards */
+    .wall-card.quote-card {
+      padding: 28px;
+    }
+    .quote-source {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--green);
+      margin-bottom: 14px;
+    }
+    .quote-source .clutch-icon {
+      width: 14px;
+      height: 14px;
+      background: var(--green);
+      color: white;
+      border-radius: 3px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.55rem;
+      font-weight: 800;
+    }
+    .quote-text {
+      font-family: 'Newsreader', Georgia, serif;
+      font-size: 1.02rem;
+      color: var(--text);
+      line-height: 1.65;
+      font-style: italic;
+      margin-bottom: 18px;
+    }
+    .quote-text.large {
+      font-size: 1.15rem;
+      line-height: 1.55;
+    }
+    .quote-divider {
+      height: 1px;
+      background: var(--gray-200);
+      margin-bottom: 14px;
+    }
+    .quote-author {
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--gray-900);
+    }
+    .quote-role {
+      font-size: 0.75rem;
+      color: var(--gray-400);
+      margin-top: 2px;
+    }
+    .wall-cta-row {
+      text-align: center;
+      margin-top: 36px;
+    }
+    .wall-cta-row a {
+      color: var(--green);
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      border-bottom: 1px solid var(--green-light);
+      transition: border-color 0.2s;
+    }
+    .wall-cta-row a:hover {
+      border-bottom-color: var(--green);
+    }
+
+    @media (max-width: 960px) {
+      .wall-grid { columns: 2; }
+    }
+    @media (max-width: 640px) {
+      .wall-grid { columns: 1; }
+    }
+
+    /* ── FINAL CTA ── */
+    .final-cta {
+      padding: 100px 0;
+      text-align: center;
+      background: var(--gray-50);
+      border-top: 1px solid var(--border);
+    }
+    .final-cta h2 {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 900;
+      letter-spacing: -0.03em;
+      margin-bottom: 14px;
+      color: var(--gray-900);
+    }
+    .final-cta h2 em {
+      font-family: 'Newsreader', Georgia, serif;
+      font-style: italic;
+      font-weight: 500;
+      color: var(--green);
+    }
+    .final-cta p {
+      color: var(--text-secondary);
+      font-size: 1.1rem;
+      max-width: 480px;
+      margin: 0 auto 36px;
+      line-height: 1.65;
+    }
+    .final-cta .hero-cta { display: inline-block; }
+    .final-cta .hero-sub {
+      color: var(--gray-400);
+      font-size: 0.85rem;
+      margin-top: 16px;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 24px 0;
+      text-align: center;
+      background: var(--white);
+    }
+    footer p {
+      color: var(--gray-400);
+      font-size: 0.78rem;
+    }
+    footer a {
+      color: var(--gray-500);
+      text-decoration: none;
+    }
+    footer a:hover { color: var(--green); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      .hero { padding: 60px 24px 68px; }
+      section { padding: 60px 0; }
+      .stats-inner { grid-template-columns: 1fr; gap: 20px; }
+      .stats-row { padding: 40px 24px; }
+      .stat-number { font-size: 1.8rem; }
+      .calc-inputs { grid-template-columns: 1fr; }
+      .calc-results { grid-template-columns: 1fr; }
+      .calc-card { padding: 28px 20px; }
+      .calc-result-amount { font-size: 1.6rem; }
+      .posthire-grid { grid-template-columns: 1fr; }
+      .testimonial-grid { grid-template-columns: 1fr; }
+      .comparison-table-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+      .comparison-table { min-width: 620px; }
+      .comparison-table td, .comparison-table thead th { padding: 12px 16px; font-size: 0.85rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">Somewhere <span>vs</span> Sagan</a>
+      <a href="https://calendly.com/d/5j7-3xv-p5k/global-talent-hiring-consultation?utm_source=somewhere-vs-sagan&utm_term=nav" class="nav-cta" target="_blank" rel="noopener">Book a Free Call</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+
+      <h1>Somewhere Charges More.<br><em>Sagan Gives You More.</em></h1>
+      <p>Both companies recruit global talent directly for your team. The difference? Sagan costs less per hire, saves you more as you scale, and supports you long after the hire.</p>
+      <a href="https://calendly.com/d/5j7-3xv-p5k/global-talent-hiring-consultation?utm_source=somewhere-vs-sagan&utm_term=hero" class="hero-cta" target="_blank" rel="noopener">Book a Free Consultation</a>
+      <div class="hero-sub">No commitment. No pressure. See if Sagan is the right fit.</div>
+    </div>
+  </section>
+
+  <!-- STATS ROW -->
+  <div class="stats-row reveal">
+    <div class="stats-inner">
+      <div class="stat-item">
+        <div class="stat-number green">18%</div>
+        <div class="stat-label">Sagan Hiring Fee</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">35%</div>
+        <div class="stat-label">Somewhere Hiring Fee</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number green">Included</div>
+        <div class="stat-label">Post-Hire Support (Only With Sagan)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- COMPARISON TABLE -->
+  <section class="comparison-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Side-by-Side</div>
+        <h2 class="section-title">How They <em>Actually</em> Compare</h2>
+        <p class="section-subtitle">Both help you hire global talent directly. The value you get couldn&rsquo;t be more different.</p>
+      </div>
+      <div class="comparison-table-wrapper reveal">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Somewhere</th>
+              <th>Sagan <span class="winner-badge">Better Value</span></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hiring Fee</td>
+              <td class="cross">35% of Year 1 salary</td>
+              <td class="check">18% of Year 1 salary</td>
+            </tr>
+            <tr>
+              <td>Direct Hire</td>
+              <td class="check">&#10003;&ensp;Yes</td>
+              <td class="check">&#10003;&ensp;Yes</td>
+            </tr>
+            <tr>
+              <td>Unlimited Hires From Talent Pool</td>
+              <td class="cross">&#10007;&ensp;No</td>
+              <td class="check">&#10003;&ensp;Yes, included with membership</td>
+            </tr>
+            <tr>
+              <td>Cost for 1 Hire<small>@ $24K/yr salary</small></td>
+              <td>$8,400</td>
+              <td><strong class="check">$4,320</strong> + $499/mo</td>
+            </tr>
+            <tr>
+              <td>Cost for 3 Hires<small>@ $24K/yr salary each</small></td>
+              <td>$25,200</td>
+              <td><strong class="check">$12,960</strong> + $499/mo</td>
+            </tr>
+            <tr>
+              <td>Cost for 6 Hires<small>@ $24K/yr salary each</small></td>
+              <td>$50,400</td>
+              <td><strong class="check">$25,920</strong> + $499/mo</td>
+            </tr>
+            <tr>
+              <td>Post-Hire Support</td>
+              <td class="cross">&#10007;&ensp;None</td>
+              <td class="check">&#10003;&ensp;Community, playbooks, live Q&As</td>
+            </tr>
+            <tr>
+              <td>Onboarding Help</td>
+              <td class="cross">&#10007;&ensp;You're on your own</td>
+              <td class="check">&#10003;&ensp;Systems &amp; playbooks included</td>
+            </tr>
+            <tr>
+              <td>Ongoing Training Resources</td>
+              <td class="cross">&#10007;&ensp;None</td>
+              <td class="check">&#10003;&ensp;For you and your hires</td>
+            </tr>
+            <tr>
+              <td>Peer Community of Executives</td>
+              <td class="cross">&#10007;&ensp;No</td>
+              <td class="check">&#10003;&ensp;Founder &amp; CEO network</td>
+            </tr>
+            <tr>
+              <td>Replacement Guarantee</td>
+              <td>6 months (1 replacement)</td>
+              <td class="check">&#10003;&ensp;Unlimited for members</td>
+            </tr>
+            <tr>
+              <td>Talent Regions</td>
+              <td>Philippines, South Africa, Latin America</td>
+              <td>Latin America, Africa, Asia &mdash; global</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- CALCULATOR -->
+  <section class="calculator-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Cost Calculator</div>
+        <h2 class="section-title">See How Much You <em>Actually</em> Save</h2>
+        <p class="section-subtitle">The more you hire, the wider the gap. Adjust the numbers and see for yourself.</p>
+      </div>
+      <div class="calc-card reveal">
+        <div class="calc-inputs">
+          <div class="calc-field">
+            <label for="salary">Average Monthly Salary (USD)</label>
+            <input type="number" id="salary" value="2000" min="500" max="10000" step="100">
+          </div>
+          <div class="calc-field">
+            <label for="hires">Number of Hires (Year 1)</label>
+            <select id="hires">
+              <option value="1">1 hire</option>
+              <option value="2">2 hires</option>
+              <option value="3" selected>3 hires</option>
+              <option value="4">4 hires</option>
+              <option value="5">5 hires</option>
+              <option value="6">6 hires</option>
+              <option value="8">8 hires</option>
+              <option value="10">10 hires</option>
+              <option value="12">12 hires</option>
+              <option value="15">15 hires</option>
+            </select>
+          </div>
+        </div>
+        <div class="calc-divider"></div>
+        <div class="calc-results">
+          <div class="calc-result-card somewhere">
+            <div class="calc-result-label">Somewhere (Year 1 Cost)</div>
+            <div class="calc-result-amount" id="somewhere-cost">$25,200</div>
+            <div class="calc-result-detail" id="somewhere-detail">35% of $24,000 salary &times; 3 hires</div>
+          </div>
+          <div class="calc-result-card sagan">
+            <div class="calc-result-label">Sagan (Year 1 Cost)</div>
+            <div class="calc-result-amount" id="sagan-cost">$18,948</div>
+            <div class="calc-result-detail" id="sagan-detail">$12,960 hiring fee + $5,988 membership</div>
+          </div>
+        </div>
+        <div class="calc-savings">
+          <div class="calc-savings-label">Your Savings With Sagan</div>
+          <div class="calc-savings-amount" id="savings-amount">Save up to $6,252</div>
+          <div class="calc-savings-note" id="savings-note">Plus post-hire support, playbooks &amp; community &mdash; included free</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POST-HIRE -->
+  <section class="posthire-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">After the Hire</div>
+        <h2 class="section-title">What Happens <em>After</em> the Hire?</h2>
+        <p class="section-subtitle">Recruiting is just the beginning. The real value is whether your hire succeeds.</p>
+      </div>
+      <div class="posthire-grid">
+        <div class="posthire-card somewhere-card reveal">
+          <h3>Somewhere</h3>
+          <div class="posthire-item">
+            <div class="icon">&#10007;</div>
+            <div>No post-hire support or check-ins</div>
+          </div>
+          <div class="posthire-item">
+            <div class="icon">&#10007;</div>
+            <div>No onboarding playbooks or systems</div>
+          </div>
+          <div class="posthire-item">
+            <div class="icon">&#10007;</div>
+            <div>No community or peer network</div>
+          </div>
+          <div class="posthire-item">
+            <div class="icon">&#10007;</div>
+            <div>No training resources for your new hire</div>
+          </div>
+          <div class="posthire-item">
+            <div class="icon">&#10007;</div>
+            <div>You figure out global team management alone</div>
+          </div>
+        </div>
+        <div class="posthire-card sagan-card reveal reveal-delay-1">
+          <h3>Sagan</h3>
+          <div class="posthire-item">
+            <div class="icon">&#10003;</div>
+            <div><strong>Dedicated support</strong> to maximize your hire's impact</div>
+          </div>
+          <div class="posthire-item">
+            <div class="icon">&#10003;</div>
+            <div><strong>Onboarding playbooks</strong> &amp; proven systems</div>
+          </div>
+          <div class="posthire-item">
+            <div class="icon">&#10003;</div>
+            <div><strong>Executive community</strong> of founders &amp; CEOs hiring globally</div>
+          </div>
+          <div class="posthire-item">
+            <div class="icon">&#10003;</div>
+            <div><strong>Live Q&As</strong> and ongoing training for you and your team</div>
+          </div>
+          <div class="posthire-item">
+            <div class="icon">&#10003;</div>
+            <div><strong>Peer support from your hire's community</strong> saving you time</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="testimonials-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">What Members Say</div>
+        <h2 class="section-title">Trusted by Executives Scaling<br>With <em>Global Talent</em></h2>
+        <p style="color: var(--slate-light); font-size: 0.85rem; margin-top: 8px;">Verified reviews on <a href="https://clutch.co/profile/sagan-passport" target="_blank" rel="noopener" style="color: var(--green); text-decoration: underline;">Clutch</a> &mdash; 4.8&#9733; from 45 reviews</p>
+      </div>
+      <div class="testimonial-grid">
+        <div class="testimonial-card reveal">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="testimonial-text">&ldquo;Very differentiated by including training and assessing as part of their offering. Many firms just source candidates and that is it.&rdquo;</div>
+          <div class="testimonial-divider"></div>
+          <div class="testimonial-author">Mike Smith</div>
+          <div class="testimonial-role">Managing Partner, Scrappy Capital</div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="testimonial-text">&ldquo;The business model makes it extremely affordable to enter the global talent pool without significant one-time fees. Great ongoing resources, and they continue to develop tools as part of the membership.&rdquo;</div>
+          <div class="testimonial-divider"></div>
+          <div class="testimonial-author">Ryan Shackelford</div>
+          <div class="testimonial-role">Owner &amp; CPA, Shack Accounting</div>
+        </div>
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div class="testimonial-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <div class="testimonial-text">&ldquo;They challenge you to think differently about global talent. They educate you on a complicated market. And they deliver the goods.&rdquo;</div>
+          <div class="testimonial-divider"></div>
+          <div class="testimonial-author">Greg Van Horn</div>
+          <div class="testimonial-role">Owner, Bumble Roofing</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WALL OF LOVE -->
+  <section class="wall-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label">Wall of Love</div>
+        <h2 class="section-title">Don't Take <em>Our</em> Word For It</h2>
+        <p class="section-subtitle">Real posts. Real reviews. From real business owners who switched to Sagan.</p>
+      </div>
+      <div class="wall-grid">
+
+        <!-- Tweet: Rich Jordan -->
+        <div class="wall-card tweet-card reveal">
+          <blockquote class="twitter-tweet" data-conversation="none" data-dnt="true"><a href="https://twitter.com/StrongpointRich/status/1822046644256260219"></a></blockquote>
+        </div>
+
+        <!-- Clutch: Vish Mazumder -->
+        <div class="wall-card quote-card reveal">
+          <div class="quote-source"><span class="clutch-icon">&#9733;</span> Verified on Clutch</div>
+          <div class="quote-text large">&ldquo;The peace of mind that we're able to deliver to our clients starts with the partnership with your company.&rdquo;</div>
+          <div class="quote-divider"></div>
+          <div class="quote-author">Vish Mazumder</div>
+          <div class="quote-role">Franchisee, Mighty Dog Roofing</div>
+        </div>
+
+        <!-- Tweet: Josh Schultz -->
+        <div class="wall-card tweet-card reveal">
+          <blockquote class="twitter-tweet" data-dnt="true"><a href="https://twitter.com/joshuamschultz/status/1787224837980635274"></a></blockquote>
+        </div>
+
+        <!-- Clutch: DeAnn Gruber -->
+        <div class="wall-card quote-card reveal">
+          <div class="quote-source"><span class="clutch-icon">&#9733;</span> Verified on Clutch</div>
+          <div class="quote-text">&ldquo;I had VERY high expectations when choosing a global talent provider and Sagan Passport has surpassed even those. I have recommended Sagan to 10+ friends and will continue to do so.&rdquo;</div>
+          <div class="quote-divider"></div>
+          <div class="quote-author">DeAnn Gruber</div>
+          <div class="quote-role">Franchisee, Massage Envy</div>
+        </div>
+
+        <!-- Tweet: Chad Nelson -->
+        <div class="wall-card tweet-card reveal">
+          <blockquote class="twitter-tweet" data-dnt="true"><a href="https://twitter.com/Chad_Nelson_/status/1801277850193973269"></a></blockquote>
+        </div>
+
+        <!-- Clutch: Warren Lzo -->
+        <div class="wall-card quote-card reveal">
+          <div class="quote-source"><span class="clutch-icon">&#9733;</span> Verified on Clutch</div>
+          <div class="quote-text large">&ldquo;I have hired well over 100 people in my career. Sagan led the way for us the entire time. The team is collaborative and communicative at each step.&rdquo;</div>
+          <div class="quote-divider"></div>
+          <div class="quote-author">Warren Lzo</div>
+          <div class="quote-role">Franchisee, PropertyCraft Management</div>
+        </div>
+
+        <!-- Tweet: Dialed In Bookkeeping -->
+        <div class="wall-card tweet-card reveal">
+          <blockquote class="twitter-tweet" data-dnt="true"><a href="https://twitter.com/DIBookkeeping/status/1793025290760798350"></a></blockquote>
+        </div>
+
+        <!-- Clutch: Mark Miller -->
+        <div class="wall-card quote-card reveal">
+          <div class="quote-source"><span class="clutch-icon">&#9733;</span> Verified on Clutch</div>
+          <div class="quote-text">&ldquo;The time to hire was faster than we have ever been able to accomplish internally. The quality of hire appears to be as good or better than we have had the ability to hire locally.&rdquo;</div>
+          <div class="quote-divider"></div>
+          <div class="quote-author">Mark Miller</div>
+          <div class="quote-role">Franchisee, Soccer Shots Buffalo</div>
+        </div>
+
+        <!-- Tweet: Jake Wakely -->
+        <div class="wall-card tweet-card reveal">
+          <blockquote class="twitter-tweet" data-dnt="true"><a href="https://twitter.com/jakelywakely/status/1782529918565310975"></a></blockquote>
+        </div>
+
+        <!-- Clutch: John Kelly -->
+        <div class="wall-card quote-card reveal">
+          <div class="quote-source"><span class="clutch-icon">&#9733;</span> Verified on Clutch</div>
+          <div class="quote-text large">&ldquo;As a new business owner, it has been worth every penny. Sagan Passport strives to just blow us away with valuable work that seems to improve every month.&rdquo;</div>
+          <div class="quote-divider"></div>
+          <div class="quote-author">John Kelly</div>
+          <div class="quote-role">Franchisee, Rolling Suds</div>
+        </div>
+
+        <!-- Tweet: Brandon Dixon -->
+        <div class="wall-card tweet-card reveal">
+          <blockquote class="twitter-tweet" data-dnt="true"><a href="https://twitter.com/brandonadixon/status/1798342882702790712"></a></blockquote>
+        </div>
+
+        <!-- Tweet: Ken Otto -->
+        <div class="wall-card tweet-card reveal">
+          <blockquote class="twitter-tweet" data-dnt="true"><a href="https://twitter.com/BroknClok/status/1776285301062729752"></a></blockquote>
+        </div>
+
+      </div>
+      <div class="wall-cta-row reveal">
+        <a href="https://clutch.co/profile/sagan-passport" target="_blank" rel="noopener">Read all 45 verified reviews on Clutch &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <div class="container reveal">
+      <h2>Ready to <em>Hire Smarter?</em></h2>
+      <p>Same caliber of global talent. Lower cost per hire. Ongoing support after the hire. See why scaling companies choose Sagan.</p>
+      <a href="https://calendly.com/d/5j7-3xv-p5k/global-talent-hiring-consultation?utm_source=somewhere-vs-sagan&utm_term=bottom-cta" class="hero-cta" target="_blank" rel="noopener">Book a Free Consultation</a>
+      <div class="hero-sub">No commitment &bull; No pressure &bull; Just an honest conversation</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Sagan. All information based on publicly available data. <a href="https://saganpassport.com" target="_blank" rel="noopener">saganpassport.com</a></p>
+    </div>
+  </footer>
+
+  <!-- Twitter embed widget -->
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+  <script>
+    // ── Scroll reveal ──
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // ── Calculator ──
+    const salaryInput = document.getElementById('salary');
+    const hiresSelect = document.getElementById('hires');
+
+    function fmt(n) { return '$' + n.toLocaleString('en-US'); }
+
+    function calculate() {
+      const monthly = parseInt(salaryInput.value) || 2000;
+      const annual = monthly * 12;
+      const hires = parseInt(hiresSelect.value) || 3;
+
+      const swCost = Math.round(annual * 0.35 * hires);
+      const saganPlacement = Math.round(annual * 0.18 * hires);
+      const saganMembership = 499 * 12;
+      const saganTotal = saganPlacement + saganMembership;
+
+      document.getElementById('somewhere-cost').textContent = fmt(swCost);
+      document.getElementById('somewhere-detail').textContent = '35% of ' + fmt(annual) + ' salary \u00d7 ' + hires + (hires === 1 ? ' hire' : ' hires');
+      document.getElementById('sagan-cost').textContent = fmt(saganTotal);
+      document.getElementById('sagan-detail').textContent = fmt(saganPlacement) + ' hiring fee + ' + fmt(saganMembership) + ' membership';
+
+      const savings = swCost - saganTotal;
+      const el = document.getElementById('savings-amount');
+      const note = document.getElementById('savings-note');
+
+      if (savings > 0) {
+        el.textContent = 'Save ' + fmt(savings);
+        el.style.color = '#93c5fd';
+        note.textContent = 'Plus post-hire support, playbooks & community \u2014 included free';
+      } else if (savings >= -1000) {
+        el.textContent = 'Comparable cost';
+        el.style.color = '#fbbf24';
+        note.textContent = 'But Sagan includes post-hire support, playbooks & community that Somewhere doesn\u2019t offer';
+      } else {
+        el.textContent = fmt(saganTotal - swCost) + ' more upfront';
+        el.style.color = '#fbbf24';
+        note.textContent = 'But includes $' + saganMembership.toLocaleString() + '/yr of post-hire support, community & playbooks that Somewhere doesn\u2019t offer at any price';
+      }
+    }
+
+    salaryInput.addEventListener('input', calculate);
+    hiresSelect.addEventListener('change', calculate);
+    calculate();
+  </script>
+
+</body>
+</html>
